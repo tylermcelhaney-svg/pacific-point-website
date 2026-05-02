@@ -873,3 +873,84 @@ p:last-child { margin-bottom: 0; }
   h1 { font-size: 2.2rem; }
   h2 { font-size: 1.8rem; }
 }
+
+/* ---------- Page Split Layouts (two-column sections) ---------- */
+.page-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.page-split-start {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .page-split,
+  .page-split-start,
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  /* Hide decorative visual blocks on mobile to keep pages clean */
+  .service-visual { height: 200px; }
+  /* Contact grid stacks cleanly */
+  .contact-direct { margin-top: 0; }
+  /* Stats word wrapping on small screens */
+  .stat-word { font-size: 1.05rem; }
+  /* Btn actions stack */
+  .btn-actions { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 600px) {
+  .btn-actions { align-items: center; }
+  .hero { padding-top: calc(var(--nav-h) + 40px); padding-bottom: 56px; }
+  .page-hero { padding-top: calc(var(--nav-h) + 32px); padding-bottom: 36px; }
+  .section { padding: 48px 0; }
+  .container { padding: 0 18px; }
+  /* Process steps compact on mobile */
+  .process-step { grid-template-columns: 44px 1fr; gap: 16px; }
+  .step-number { width: 44px; height: 44px; font-size: 1.1rem; }
+  /* Card padding reduced */
+  .card { padding: 20px; }
+  .insight-card-body { padding: 20px; }
+  .insight-card-footer { padding: 14px 20px; }
+  /* Hero heading size */
+  h1 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+  h2 { font-size: clamp(1.5rem, 6vw, 2rem); }
+  /* Section header spacing */
+  .section-header { margin-bottom: 36px; }
+  /* Reduce large stat numbers */
+  .stat-number { font-size: 2.2rem; }
+  .stat-word { font-size: 1rem; word-break: break-word; }
+  /* Hide purely decorative gradient blocks on small screens */
+  .featured-grid > div:last-child { display: none; }
+  /* CTA section tighter */
+  .cta-section-inner { padding: 48px 20px; }
+  /* Footer grid tighter */
+  .footer-grid { gap: 28px; }
+  /* Team card avatar smaller */
+  .team-card-avatar { width: 64px; height: 64px; font-size: 1.2rem; }
+}
+
+/* ---------- Form Name Row (responsive 2-col) ---------- */
+.form-name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 560px) {
+  .form-name-row { grid-template-columns: 1fr; }
+}
+
+/* ---------- Prevent horizontal scroll ---------- */
+html, body { overflow-x: hidden; max-width: 100%; }
