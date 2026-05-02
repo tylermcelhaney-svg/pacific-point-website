@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Pacific Point Partners</title>
+  <meta name="description" content="Get in touch with Pacific Point Partners. Schedule a complimentary 30-minute consultation with a senior advisor on Vietnam market entry, VIFC, corporate services, and more.">
+  <!-- Open Graph / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pacific Point Partners">
+  <meta property="og:title" content="Contact — Pacific Point Partners">
+  <meta property="og:description" content="Schedule a complimentary 30-minute consultation with a Pacific Point Partners senior advisor.">
+  <meta property="og:image" content="https://pacificpoint.co/assets/images/og-image.jpg">
+  <meta property="og:url" content="https://pacificpoint.co/contact.html">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — Pacific Point Partners">
+  <meta name="twitter:description" content="Schedule a complimentary 30-minute consultation with a Pacific Point Partners senior advisor.">
+  <meta name="twitter:image" content="https://pacificpoint.co/assets/images/og-image.jpg">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://pacificpoint.co/contact.html">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Pacific Point home">
+        <img src="assets/images/icon.png" alt="" aria-hidden="true" height="40">
+        <span class="nav-brand-name">Pacific Point</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="vifc-guide.html">VIFC Guide</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-eyebrow">Get in Touch</span>
+      <h1>Contact</h1>
+      <p class="lead" style="max-width: 560px; margin-top: 16px;">The first conversation is complimentary. Tell us what you are trying to do. We will tell you whether we can help and what that looks like.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+
+        <!-- FORM -->
+        <div class="fade-up">
+          <span class="section-eyebrow">Send a Message</span>
+          <div class="section-rule"></div>
+          <h2>Start the Conversation</h2>
+          <p style="color: var(--text-muted); margin-bottom: 32px;">Use this form to introduce yourself and outline what you are working on. A senior advisor will respond within one business day.</p>
+
+          <!--
+            FORMSPREE SETUP — 3 steps:
+            1. Create a free account at formspree.io
+            2. Create a new form and copy your form ID (looks like: xpzgkwrb)
+            3. Replace YOUR_FORM_ID below with your actual form ID
+            Then remove the data-static-form attribute and the JavaScript simulation at the bottom.
+          -->
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            data-static-form="true"
+            style="display: flex; flex-direction: column; gap: 20px;"
+          >
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div>
+                <label class="form-label" for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" class="form-input" placeholder="First name" required>
+              </div>
+              <div>
+                <label class="form-label" for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Last name" required>
+              </div>
+            </div>
+            <div>
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Your email address" required>
+            </div>
+            <div>
+              <label class="form-label" for="organization">Organization</label>
+              <input type="text" id="organization" name="organization" class="form-input" placeholder="Company or organization name">
+            </div>
+            <div>
+              <label class="form-label" for="service">Area of Interest</label>
+              <select id="service" name="service" class="form-input">
+                <option value="">Select a service area</option>
+                <option value="vifc-market-entry">VIFC Market Entry</option>
+                <option value="corporate-services">Corporate Services</option>
+                <option value="compliance-governance">Compliance &amp; Governance</option>
+                <option value="regulatory-intelligence">Regulatory Intelligence</option>
+                <option value="asset-management-funds">Asset Management &amp; Funds</option>
+                <option value="wealth-advisory">Wealth &amp; Advisory Services</option>
+                <option value="relocation">White Glove Relocation</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label" for="message">What Are You Working On?</label>
+              <textarea id="message" name="message" class="form-input" rows="5" placeholder="Briefly describe your objectives, current structure, or what you are trying to achieve. The more context you can provide, the more useful our first conversation will be." required></textarea>
+            </div>
+            <!-- Honeypot field for spam prevention -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+          </form>
+          <div id="formSuccess" style="display: none; padding: 24px; background: var(--off-white); border-radius: var(--radius-md); text-align: center;">
+            <p style="color: var(--navy); font-weight: 600; margin: 0;">Message received. A senior advisor will be in touch within one business day.</p>
+          </div>
+        </div>
+
+        <!-- SIDEBAR INFO -->
+        <div class="fade-up">
+          <div style="background: var(--off-white); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 28px;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 24px;">What to Expect</h3>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 0.8rem; font-weight: 700;">1</div>
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: 4px;">We Review Your Inquiry</h4>
+                  <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">A senior advisor reads your message and responds within one business day. We do not use form acknowledgment templates.</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 0.8rem; font-weight: 700;">2</div>
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: 4px;">30-Minute Consultation</h4>
+                  <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">A complimentary 30-minute call with a senior advisor. We assess your situation and give you a clear picture of your options before anything else.</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 0.8rem; font-weight: 700;">3</div>
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: 4px;">Written Scope &amp; Fees</h4>
+                  <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">If we are the right fit, we provide a written scope of engagement covering deliverables, timeline, and fees. Everything agreed in writing before work begins.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background: var(--navy); border-radius: var(--radius-lg); padding: 36px; color: white;">
+            <h3 style="color: var(--white); font-size: 1.1rem; margin-bottom: 20px;">Direct Contact</h3>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px;">Email</p>
+                <a href="mailto:info@pacificpoint.co" style="color: var(--blue-light); font-weight: 600; text-decoration: none;">info@pacificpoint.co</a>
+              </div>
+              <div>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px;">Base</p>
+                <p style="color: rgba(255,255,255,0.85); margin: 0; font-size: 0.92rem;">Vietnam and Asia Pacific</p>
+              </div>
+              <div>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px;">Response Time</p>
+                <p style="color: rgba(255,255,255,0.85); margin: 0; font-size: 0.92rem;">Within one business day</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="cta-section-inner fade-up">
+      <h2>Not Ready to Reach Out Yet?</h2>
+      <p>Start with the VIFC Guide. It covers the full framework, both platforms, and the most common questions we receive from new market entrants.</p>
+      <div class="btn-actions">
+        <a href="vifc-guide.html" class="btn btn-white btn-lg">Read the VIFC Guide</a>
+        <a href="faq.html" class="btn btn-outline-white btn-lg">View FAQs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/images/icon-white.png" alt="Pacific Point Partners" height="40">
+            <span class="footer-logo-text">Pacific Point</span>
+          </div>
+          <p>Corporate services, market entry advisory, and regulatory support for international businesses entering Vietnam and the Vietnam International Financial Centre. Serving VIFC Da Nang and VIFC Ho Chi Minh City.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#corporate">Corporate Services</a></li>
+            <li><a href="services.html#vifc">VIFC Market Entry</a></li>
+            <li><a href="services.html#compliance">Compliance</a></li>
+            <li><a href="services.html#funds">Asset Management &amp; Funds</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="vifc-guide.html">VIFC Guide</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="regulatory-disclosure.html">Regulatory Disclosure</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Pacific Point Partners. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('formSuccess');
+    if (contactForm && contactForm.dataset.staticForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        contactForm.style.display = 'none';
+        formSuccess.style.display = 'block';
+      });
+    }
+  </script>
+</body>
+</html>
